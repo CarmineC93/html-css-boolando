@@ -1,0 +1,137 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+/* HEADER */
+header{
+    /* DEBUG */
+    background-color: orange;
+    height: 50px;
+    color: white;
+}
+
+.top-page{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo img{
+    /* debug togliere width appena bloccata l'altezza al div logo */
+    width: 150px;
+    padding-top: 10px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+/* MAIN */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    /* DEBUG */
+    background-color: aquamarine;
+}
+
+.card{
+    /* DEBUG */
+    height: 600px;
+    width: 380px;
+    /* width: (100% / 3) - 40px; */
+    background-color: pink;
+    border: 1px solid black;
+    
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.sale-box{
+        /* DEBUG */
+
+    width: 2.5rem;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    color: white;
+}
+
+.green-wash{
+        /* DEBUG */
+
+    width: 60px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: 2rem;
+    left: 2.7rem;
+    color: white;
+}
+
+.whish-list{
+        /* DEBUG */
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.product-infos{
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 20px 0 
+
+}
+
+.bottom-page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    
+}
