@@ -8,6 +8,10 @@
 
 /* COMMON */
 
+html{
+   font-family: 'Roboto', sans-serif;
+}
+
 .container{
     width: 80%;
     max-width: 1200px;
@@ -19,49 +23,67 @@ img{
 }
 
 .card{
-    /* DEBUG */
-    height: 600px;
-    width: 380px;
-    /* width: (100% / 3) - 40px; */
-    background-color: pink;
-    border: 1px solid black;
+    width: calc(100% / 3 - 10px);
     position: relative;
     margin-bottom: 6rem;
 }
 
 .sale-box{
-        /* DEBUG */
-
-    width: 2.5rem;
-    height: 20px;
     background-color: red;
-    color: white;
     position: absolute;
     bottom: 2rem;
     left: 0;
 }
 
 .green-wash{
-        /* DEBUG */
-
-    width: 60px;
-    height: 20px;
     background-color: green;
-    color: white;
     position: absolute;
     bottom: 2rem;
     left: 2.7rem;
 }
 
 .whish-list{
-        /* DEBUG */
-
-    width: 40px;
-    height: 40px;
+    padding: 0.7rem 1rem;
+    font-size: 2em;
     background-color: white;
     position: absolute;
     top: 1rem;
     right: 0;
+}
+
+.label{
+    line-height: 1.5rem;
+    padding: .1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.product-name{
+    font-size: 1.5 rem;
+    font-weight: 600;
+}
+
+.actual-price{
+    color: red;
+}
+
+.old-price{
+    text-decoration: line-through ;
+}
+
+.first-pic{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ .card:hover .first-pic{
+    display: none;
+}
+
+.whish-list:hover {
+    color: red;
 }
 
 /* HEADER */
@@ -80,7 +102,7 @@ header{
 
 .logo img{
     /* debug togliere width appena bloccata l'altezza al div logo */
-    width: 150px;
+    width: 140px;
     padding-top: 10px;
 }
 
@@ -102,11 +124,7 @@ ul{
     gap: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-    /* DEBUG */
-    background-color: aquamarine;
 }
-
 
 
 .product-infos{
@@ -122,7 +140,7 @@ footer{
     background-color: black;
     color: white;
     height: 100px;
-    padding: 20px 0 
+    padding: 20px 0
 
 }
 
@@ -131,6 +149,3 @@ footer{
     justify-content: space-between;
 }
 
-.social-link {
-
-}
