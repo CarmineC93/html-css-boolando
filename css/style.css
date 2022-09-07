@@ -12,12 +12,56 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
-
 
 img{
     max-width: 100%;
+}
+
+.card{
+    /* DEBUG */
+    height: 600px;
+    width: 380px;
+    /* width: (100% / 3) - 40px; */
+    background-color: pink;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.sale-box{
+        /* DEBUG */
+
+    width: 2.5rem;
+    height: 20px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+}
+
+.green-wash{
+        /* DEBUG */
+
+    width: 60px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 2.7rem;
+}
+
+.whish-list{
+        /* DEBUG */
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    right: 0;
 }
 
 /* HEADER */
@@ -63,52 +107,7 @@ ul{
     background-color: aquamarine;
 }
 
-.card{
-    /* DEBUG */
-    height: 600px;
-    width: 380px;
-    /* width: (100% / 3) - 40px; */
-    background-color: pink;
-    border: 1px solid black;
-    
-    margin-bottom: 6rem;
-    position: relative;
-}
 
-.sale-box{
-        /* DEBUG */
-
-    width: 2.5rem;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    color: white;
-}
-
-.green-wash{
-        /* DEBUG */
-
-    width: 60px;
-    height: 20px;
-    background-color: green;
-    position: absolute;
-    bottom: 2rem;
-    left: 2.7rem;
-    color: white;
-}
-
-.whish-list{
-        /* DEBUG */
-
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    position: absolute;
-    top: 1rem;
-    right: 0;
-}
 
 .product-infos{
     position: absolute;
@@ -133,5 +132,5 @@ footer{
 }
 
 .social-link {
-    
+
 }
