@@ -35,20 +35,18 @@ a{
 
 .sale-box{
     background-color: red;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
 }
 
 .green-wash{
     background-color: green;
-    position: absolute;
-    bottom: 2rem;
-    left: 2.7rem;
 }
 
 .whish-list{
-    padding: 0.7rem 1rem;
+    /* padding: 0.7rem 1rem; meglio non usarlo se la forma da ottenere deve essere precisa, o cambierà a seconda del contenuto */ 
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
     font-size: 2em;
     background-color: white;
     position: absolute;
@@ -56,12 +54,22 @@ a{
     right: 0;
 }
 
-.label{
-    line-height: 1.5rem;
-    padding: .1rem;
+/* 
+Problema: Allo strecciare della pagina, le label (con sconto e sostenibilità)  non si mettevano uno sotto l'altro ma uscivano anzi dal box con l'immagine
+Motivo: Non si riadattavano al restringimento del contenitore immagine andando una sotto l'altra perchè erano state impostate come label indipendenti con singole posizioni assolute nel box immagine
+Soluzione: Inserire i label in un contenitore (label-box) e dare a quel contenitore e non a loro una posizione assoluta, in modo che allo strecciare della pagina il contenitore resti fisso ma loro si riposizionino all'interno del contenitore. 
+*/
+
+.label-box{
+    line-height: 2rem;
+    padding: .5rem;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
 }
 
 .product-name{
@@ -115,7 +123,7 @@ header{
 
 .logo img{
     /* debug togliere width appena bloccata l'altezza al div logo */
-    width: 140px;
+    width: 140px; 
     padding-top: 10px;
 }
 
@@ -142,7 +150,6 @@ ul{
     position: absolute;
     bottom: -4rem;
     left: 0;
-
 }
 
 /* FOOTER */
